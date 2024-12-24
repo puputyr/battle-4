@@ -3,47 +3,44 @@
 [ext_resource type="Texture2D" uid="uid://crjrlds5fa38c" path="res://asset/Battleground4.png" id="1_d1vx4"]
 [ext_resource type="Texture2D" uid="uid://brwjmd5kag7y4" path="res://asset/Ladder_01.png" id="2_sik54"]
 
-[node name="batle 4" type="Sprite2D"]
-position = Vector2(576, 324)
-scale = Vector2(0.6, 0.6)
+[node name="background" type="Node2D"]
+
+[node name="Battleground4" type="Sprite2D" parent="."]
+position = Vector2(576, 324.5)
+scale = Vector2(0.6, 0.599074)
 texture = ExtResource("1_d1vx4")
 
 [node name="Ladder01" type="Sprite2D" parent="."]
-position = Vector2(-837.659, 419.815)
-scale = Vector2(0.806087, 1.18076)
+position = Vector2(45, 576)
+scale = Vector2(0.599432, 0.6875)
 texture = ExtResource("2_sik54")
 
 [node name="Ladder02" type="Sprite2D" parent="."]
-position = Vector2(-589.649, 419.815)
-scale = Vector2(0.806087, 1.18076)
+position = Vector2(229, 576)
+scale = Vector2(0.599432, 0.6875)
 texture = ExtResource("2_sik54")
 
 [node name="Ladder03" type="Sprite2D" parent="."]
-position = Vector2(-341.638, 419.815)
-scale = Vector2(0.806087, 1.18076)
+position = Vector2(413, 576)
+scale = Vector2(0.599432, 0.6875)
 texture = ExtResource("2_sik54")
 
 [node name="Ladder04" type="Sprite2D" parent="."]
-position = Vector2(-91.9636, 419.815)
-scale = Vector2(0.806087, 1.18076)
+position = Vector2(596, 576)
+scale = Vector2(0.599432, 0.6875)
 texture = ExtResource("2_sik54")
 
 [node name="Ladder05" type="Sprite2D" parent="."]
-position = Vector2(157.711, 419.815)
-scale = Vector2(0.806087, 1.18076)
+position = Vector2(780, 576)
+scale = Vector2(0.599432, 0.6875)
 texture = ExtResource("2_sik54")
 
 [node name="Ladder06" type="Sprite2D" parent="."]
-position = Vector2(407.386, 419.815)
-scale = Vector2(0.806087, 1.18076)
+position = Vector2(965, 576)
+scale = Vector2(0.599432, 0.6875)
 texture = ExtResource("2_sik54")
 
 [node name="Ladder07" type="Sprite2D" parent="."]
-position = Vector2(655.397, 419.815)
-scale = Vector2(0.806087, 1.18076)
-texture = ExtResource("2_sik54")
-
-[node name="Ladder08" type="Sprite2D" parent="."]
-position = Vector2(905.072, 419.815)
-scale = Vector2(0.806087, 1.18076)
+position = Vector2(1143, 576)
+scale = Vector2(0.599432, 0.6875)
 texture = ExtResource("2_sik54")
