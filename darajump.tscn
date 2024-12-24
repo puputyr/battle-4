@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3 uid="uid://bnq8ip218eb5"]
+
+[ext_resource type="Texture2D" uid="uid://ctu6ec7ri8fs1" path="res://asset/dara/Jump.png" id="1_ffrjx"]
+
+[sub_resource type="Animation" id="Animation_nw43c"]
+resource_name = "dara_jump"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame_coords")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8, 1.2, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(1, 0), Vector2i(2, 0), Vector2i(3, 0), Vector2i(4, 0), Vector2i(5, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_iyg5r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_l4dk1"]
+_data = {
+"RESET": SubResource("Animation_iyg5r"),
+"dara_jump": SubResource("Animation_nw43c")
+}
+
+[node name="darajump" type="Sprite2D"]
+texture_filter = 1
+texture = ExtResource("1_ffrjx")
+hframes = 6
+frame = 1
+
+[node name="dara_jump" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_l4dk1")
+}

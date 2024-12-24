@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmpvnx6ieqyp3"]
+
+[ext_resource type="Texture2D" uid="uid://d1tmw61uym4w6" path="res://asset/dara/Hurt.png" id="1_u6co4"]
+
+[sub_resource type="Animation" id="Animation_52kjf"]
+resource_name = "dara_hurt"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame_coords")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2i(0, 0), Vector2i(1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_0md1j"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fc8j4"]
+_data = {
+"RESET": SubResource("Animation_0md1j"),
+"dara_hurt": SubResource("Animation_52kjf")
+}
+
+[node name="darahurt" type="Sprite2D"]
+texture_filter = 1
+texture = ExtResource("1_u6co4")
+hframes = 2
+
+[node name="dara_hurt" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_fc8j4")
+}
