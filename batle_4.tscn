@@ -6,8 +6,8 @@
 [node name="background" type="Node2D"]
 
 [node name="Battleground4" type="Sprite2D" parent="."]
-position = Vector2(576, 324.5)
-scale = Vector2(0.6, 0.599074)
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_d1vx4")
 
 [node name="Ladder01" type="Sprite2D" parent="."]
