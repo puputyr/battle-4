@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://kcdun8wtyxhe"]
+
+[ext_resource type="Texture2D" uid="uid://dp0tcr5ws0fds" path="res://asset/dara/Attack_3.png" id="1_2nret"]
+
+[node name="daraattack_3" type="Sprite2D"]
+texture = ExtResource("1_2nret")
+
+[node name="daraattack3" type="AnimationPlayer" parent="."]
