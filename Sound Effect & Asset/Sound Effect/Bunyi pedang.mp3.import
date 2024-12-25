@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b1k3iaoa3ona4"
+path="res://.godot/imported/Bunyi pedang.mp3-3a84982d2bd1f50383314fc8b887ced5.mp3str"
+
+[deps]
+
+source_file="res://Sound Effect & Asset/Sound Effect/Bunyi pedang.mp3"
+dest_files=["res://.godot/imported/Bunyi pedang.mp3-3a84982d2bd1f50383314fc8b887ced5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
