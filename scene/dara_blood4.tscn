@@ -45,7 +45,7 @@ b = Vector2(-14, -1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jwctq")
-frame_progress = 0.0662157
+frame_progress = 0.11007
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false

@@ -42,4 +42,4 @@ shape = SubResource("SegmentShape2D_vkht0")
 [node name="CharacterBody2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, 5)
 sprite_frames = SubResource("SpriteFrames_ep5eg")
-frame_progress = 0.861746
+frame_progress = 0.7136
